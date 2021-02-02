@@ -1,6 +1,6 @@
-# my-project
+# yuji4072.github.io
 
-> A Vue.js project
+> portfolio
 
 ## Build Setup
 
