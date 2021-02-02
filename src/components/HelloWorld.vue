@@ -1,8 +1,10 @@
 <template>
   <div id = "home">
-    <div class="hello">Hello</div>
-    <div id = "put"></div>
-    <div class="hello">!</div>
+    <div id = "title">
+      <div class="hello">Hello</div>
+      <div id = "put"></div>
+      <div class="hello">!</div>
+    </div>
   </div>
 </template>
 
@@ -43,10 +45,21 @@ export default {
   margin: 0;
 }
 #put{
-  display: inline;
+  display: inline-block;
+  height : 9rem;
+  width: 27rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: azure;
 }
 .hello{
-  font-size:8rem;
+  font-size:10.5rem;
   display: inline;
+}
+#title{
+  position: absolute;
+  top: 32%;
+  left: 26%;
+
 }
 </style>
