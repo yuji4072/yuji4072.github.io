@@ -1,21 +1,8 @@
 <template>
-  <div>
-    <ol>
-      <li v-for="(item, index) in items" :key=index>
-        <router-link v-bind:to=item.path>
-          {{ item.title }}
-        </router-link>
-      </li>
-     </ol>
-     <draggable tag="ul">
-       <li v-for="i in counts" :key=i.counts>
-         {{i.couts}}
-       </li>
-     </draggable>
-     <div class="hi">call of duty</div>
-     <button class="btn btn-danger">bootstrap</button>
-    <b-button variant="primary">bootstrap</b-button>
-    <button class="btn btn-primary btn-lg btn-block" id="you" type="submit">Button</button>
+  <div id = "home">
+    <div class="hello">Hello</div>
+    <div id = "put"></div>
+    <div class="hello">!</div>
   </div>
 </template>
 
@@ -48,47 +35,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-ol {
-  margin-left: auto;
-  width: 480px;
-  display:flex;
-  justify-content: center;
+#home{
+  height: 100vh;
+  width: 100vw;
+  background-color: aqua;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
-
-li {
-  width: 100px;
-  height: 50px;
-  margin-left:10px;
-  margin-right:10px;
-  font-size: 14px;
-  background-color: skyblue;
-  border-radius: 8px;
-  position: relative;
+#put{
+  display: inline;
 }
-
-li:hover {
-  opacity: 0.4;
-}
-
-/*  router-linkがaタグとして表示されてたのでスタイルをaタグに書いた*/
-a {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  text-decoration: none;
-  line-height: 50px;
-}
-
-.hi{
-  color:black;
-}
-#you{
-  color:brown;
-  background-color:blueviolet
+.hello{
+  font-size:8rem;
+  display: inline;
 }
 </style>
