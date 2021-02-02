@@ -1,33 +1,23 @@
 <template>
-  <v-app>
-      <home></home>
-      <history></history>
-      <langage></langage>
-      <writer></writer>
-      <hobby></hobby>
-  </v-app>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import Home from './views/Home.vue';
-import Hobby from './views/Hobby.vue';
-import History from './views/History.vue';
-import Writer from './views/Writer.vue';
-import Langage from './views/Langage.vue';
-
 export default {
-  name: 'App',
-
-  components: {
-    Home,
-    Hobby,
-    History,
-    Writer,
-    Langage,
-  },
-
-  data: () => ({
-  }),
-};
+  name: 'App'
+}
 </script>
 
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
