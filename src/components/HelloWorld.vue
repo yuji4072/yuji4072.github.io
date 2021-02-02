@@ -1,113 +1,94 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
-        </a>
+  <div>
+    <ol>
+      <li v-for="(item, index) in items" :key=index>
+        <router-link v-bind:to=item.path>
+          {{ item.title }}
+        </router-link>
       </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
-      <br>
-      <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
-          vue-loader
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-    </ul>
+     </ol>
+     <draggable tag="ul">
+       <li v-for="i in counts" :key=i.counts>
+         {{i.couts}}
+       </li>
+     </draggable>
+     <div class="hi">call of duty</div>
+     <button class="btn btn-danger">bootstrap</button>
+    <b-button variant="primary">bootstrap</b-button>
+    <button class="btn btn-primary btn-lg btn-block" id="you" type="submit">Button</button>
   </div>
 </template>
 
 <script>
+import draggable from 'vuedraggable'
+
 export default {
   name: 'HelloWorld',
+  components:{
+    'draggable':draggable,
+  },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      items:[
+        {title: "top", path: '/'},
+        {title: "profile", path: '/progile'},
+        {title: "skills", path: '/skills'},
+        {title: "outputs", path: '/outputs'}
+      ],
+      counts:[
+        {counts:1},
+        {counts:2},
+        {counts:3}
+      ]
     }
-  }
+  },
+  
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
+ol {
+  margin-left: auto;
+  width: 480px;
+  display:flex;
+  justify-content: center;
   padding: 0;
+  list-style: none;
 }
+
 li {
-  display: inline-block;
-  margin: 0 10px;
+  width: 100px;
+  height: 50px;
+  margin-left:10px;
+  margin-right:10px;
+  font-size: 14px;
+  background-color: skyblue;
+  border-radius: 8px;
+  position: relative;
 }
+
+li:hover {
+  opacity: 0.4;
+}
+
+/*  router-linkがaタグとして表示されてたのでスタイルをaタグに書いた*/
 a {
-  color: #42b983;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.hi{
+  color:black;
+}
+#you{
+  color:brown;
+  background-color:blueviolet
 }
 </style>
