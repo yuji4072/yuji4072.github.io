@@ -46,20 +46,18 @@ export default {
 }
 #put{
   display: inline-block;
-  height : 9rem;
-  width: 27rem;
+  height : 8rem;
+  width: 24rem;
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: azure;
 }
 .hello{
-  font-size:10.5rem;
+  font-size:9rem;
   display: inline;
 }
 #title{
-  position: absolute;
-  top: 32%;
-  left: 26%;
-
+  position: relative;
+  top: 35vh;  
 }
 </style>
