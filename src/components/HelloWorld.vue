@@ -5,6 +5,11 @@
       <div id = "put"></div>
       <div class="hello">!</div>
     </div>
+    <v-sheet class="next" id = "hobby">Hobby</v-sheet>
+    <div class="next" id = "history">History</div>
+    <div class="next" id = "writer">Writer</div>
+    <div class="next" id = "skill">Skill</div>
+    <div class="next" id = "world">World</div>
   </div>
 </template>
 
@@ -22,7 +27,7 @@ export default {
         {title: "hobby", path: '/hobby'},
         {title: "history", path: '/history'},
         {title: "writer", path: '/writer'},
-        {title: "langage", path: '/langage'},
+        {title: "skill", path: '/skill'},
         {title: "world", path: '/world'}
       ],
     }
