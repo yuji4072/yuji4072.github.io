@@ -19,16 +19,12 @@ export default {
   data () {
     return {
       items:[
-        {title: "top", path: '/'},
-        {title: "profile", path: '/progile'},
-        {title: "skills", path: '/skills'},
-        {title: "outputs", path: '/outputs'}
+        {title: "hobby", path: '/hobby'},
+        {title: "history", path: '/history'},
+        {title: "writer", path: '/writer'},
+        {title: "langage", path: '/langage'},
+        {title: "world", path: '/world'}
       ],
-      counts:[
-        {counts:1},
-        {counts:2},
-        {counts:3}
-      ]
     }
   },
   
@@ -40,7 +36,7 @@ export default {
 #home{
   height: 100vh;
   width: 100vw;
-  background-color: aqua;
+  background-color: #ffffff;
   padding: 0;
   margin: 0;
 }
@@ -50,7 +46,10 @@ export default {
   width: 24rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  background-color: azure;
+  background-color: #ffffff;
+  border-width: thick;
+  border-style: solid;
+  border-color: #00aaff;
 }
 .hello{
   font-size:9rem;
