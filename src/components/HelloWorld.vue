@@ -5,22 +5,22 @@
       <div id = "put"></div>
       <div class="hello">!</div>
     </div>
-    <v-sheet class="next" id = "hobby">Hobby</v-sheet>
-    <div class="next" id = "history">History</div>
-    <div class="next" id = "writer">Writer</div>
-    <div class="next" id = "skill">Skill</div>
-    <div class="next" id = "world">World</div>
+    <v-sheet class="next" id = "hobby" @click = "hobby">Hobby</v-sheet>
+    <v-sheet class="next" id = "history" @click = "history">History</v-sheet>
+    <v-sheet class="next" id = "writer" @click = "writer">Writer</v-sheet>
+    <v-sheet class="next" id = "skill" @click = "skill">Skill</v-sheet>
+    <v-sheet class="next" id = "world" @click = "world">World</v-sheet>
   </div>
 </template>
 
 <script>
-import draggable from 'vuedraggable'
+// import draggable from 'vuedraggable'
 
 export default {
   name: 'HelloWorld',
-  components:{
-    'draggable':draggable,
-  },
+  // components:{
+  //   'draggable':draggable,
+  // },
   data () {
     return {
       items:[
@@ -30,10 +30,29 @@ export default {
         {title: "skill", path: '/skill'},
         {title: "world", path: '/world'}
       ],
+      hobby: document.getElementById("hobby"),
+      history: document.getElementById("history"),
+      skill: document.getElementById("skill"),
+      writer: document.getElementById("writer"),
+      world: document.getElementById("world"),
     }
   },
-  
+  methods:{
+    hobby: function(event){
+      document.addEventListener("mousemove",HobbyonMouseMove);
+    },
+    HobbyonMouseMove: function(event){
+      var x = event.clientX;
+      var y = event.clientY;
+      var width = this.hobby.offsetWidth;
+      var height = this.hobby.offsetHeight;
+      this.hobby.top = (y - height/2) + "px";
+      this.hobby.top = (x - width/2) + "px";
+    }
+  },
 }
+  
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,6 +74,7 @@ export default {
   border-width: thick;
   border-style: solid;
   border-color: #00aaff;
+  -khtml-user-drag: element;
 }
 .hello{
   font-size:9rem;
@@ -63,5 +83,14 @@ export default {
 #title{
   position: relative;
   top: 35vh;  
+}
+.next{
+  font-size: 6rem;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+}
+.next#hobby{
+  margin-left:0;
 }
 </style>
