@@ -1,15 +1,22 @@
 <template>
-  <div id = "home">
-    <div id = "title">
-      <div class="hello">Hello</div>
-      <div id = "put"></div>
-      <div class="hello">!</div>
+  <div>
+    <div id = "home">
+      <div id = "title">
+        <div class="hello">Hello</div>
+        <div id = "put"></div>
+        <div class="hello">!</div>
+      </div>
+      <v-sheet class="next" id = "hobby">Hobby</v-sheet>
+      <v-sheet class="next" id = "history">History</v-sheet>
+      <v-sheet class="next" id = "writer">Writer</v-sheet>
+      <v-sheet class="next" id = "skill">Skill</v-sheet>
+      <v-sheet class="next" id = "world">World</v-sheet>
     </div>
-    <v-sheet class="next" id = "hobby" @click = "hobby">Hobby</v-sheet>
-    <v-sheet class="next" id = "history" @click = "history">History</v-sheet>
-    <v-sheet class="next" id = "writer" @click = "writer">Writer</v-sheet>
-    <v-sheet class="next" id = "skill" @click = "skill">Skill</v-sheet>
-    <v-sheet class="next" id = "world" @click = "world">World</v-sheet>
+    <div id = "next_border">
+      <div id = "next_home">
+          
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,33 +30,13 @@ export default {
   // },
   data () {
     return {
-      items:[
-        {title: "hobby", path: '/hobby'},
-        {title: "history", path: '/history'},
-        {title: "writer", path: '/writer'},
-        {title: "skill", path: '/skill'},
-        {title: "world", path: '/world'}
-      ],
-      hobby: document.getElementById("hobby"),
-      history: document.getElementById("history"),
-      skill: document.getElementById("skill"),
-      writer: document.getElementById("writer"),
-      world: document.getElementById("world"),
+      
     }
   },
   methods:{
-    hobby: function(event){
-      document.addEventListener("mousemove",HobbyonMouseMove);
-    },
-    HobbyonMouseMove: function(event){
-      var x = event.clientX;
-      var y = event.clientY;
-      var width = this.hobby.offsetWidth;
-      var height = this.hobby.offsetHeight;
-      this.hobby.top = (y - height/2) + "px";
-      this.hobby.top = (x - width/2) + "px";
-    }
-  },
+    
+  }
+  
 }
   
 
@@ -60,9 +47,22 @@ export default {
 #home{
   height: 100vh;
   width: 100vw;
-  background-color: #ffffff;
+  background-color: #00aaff;
   padding: 0;
   margin: 0;
+}
+#next_border{
+  height: 100vh;
+  width: 100vw;
+  background-color: #f67690;
+}
+#next_home{
+  position: relative;
+  height: 95vh;
+  width: 70vw;
+  background-color: #ffffff;
+  margin:auto;
+  top:2.5vh;
 }
 #put{
   display: inline-block;
@@ -73,21 +73,23 @@ export default {
   background-color: #ffffff;
   border-width: thick;
   border-style: solid;
-  border-color: #00aaff;
+  border-color: #f67690;
   -khtml-user-drag: element;
 }
 .hello{
   font-size:9rem;
   display: inline;
+  color: #ffffff;
 }
 #title{
   position: relative;
-  top: 35vh;  
+  top: 30vh;  
 }
 .next{
   font-size: 6rem;
   position: absolute;
   z-index: 3;
+  color: #ffffff;
   top: 0;
 }
 .next#hobby{
