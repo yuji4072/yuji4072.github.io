@@ -1,11 +1,13 @@
 <template>
   <div id = "top">
+    <div class = "oya">
       <img src="../assets/Medium_toppage_test3.png" id = "back">
       <div id = "title">WHO AM I ?</div>
       <b-button id = "im">
           I'M ...
       </b-button>
       <div id = "try"></div>
+    </div>
   </div>
 </template>
 
@@ -75,5 +77,8 @@ export default {
   border-top: 3.125rem;
   border-right: 3.125rem;
   border-left: 3.125rem;
+}
+.oya{
+  position: relative;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
   <div id = "top">
+      <div class = "oya">
       <img src="../assets/myimg.png" id = "myimg">
       <div id = "yuji">Yuji Morishima</div>
       <div id = "age">Age: 20</div>
@@ -8,6 +9,7 @@
       <b-button class="buttons" id ="Skills">Skills</b-button>
       <b-button class="buttons" id ="Hobbies">Hobbies</b-button>
       <b-button class="buttons" id ="Novels">Novels</b-button>
+      </div>
   </div>
 </template>
 
@@ -27,10 +29,10 @@ export default {
     }
     #myimg{
         position: absolute;
-        width: 28rem;
-        height: 28rem;
-        left: 17.25rem;
-        top: 11rem;
+        width: 26.53vw;
+        height: auto;
+        left: 12.5vw;
+        top: 15vh;
         border-radius: 320px;
     }
     .buttons{
@@ -52,8 +54,8 @@ export default {
         position: absolute;
         width: 25vw;
         height: 6.5vh;
-        left: 53.25rem;
-        top: 13rem;
+        left: 50.4vw;
+        top: 21.6vh;
 
         font-family:'Righteous',cursive;
         font-style: normal;
@@ -68,8 +70,8 @@ export default {
         position: absolute;
         width: 14.6vw;
         height: 6.6vh;
-        left: 77.7rem;
-        top: 13.3rem;
+        left: 73.6vw;
+        top: 22.29vh;
         font-family:'Righteous',cursive;
         font-style: normal;
         font-weight: normal;
@@ -83,24 +85,27 @@ export default {
         position: absolute;
         width: 38vw;
         height: 0;
-        left: 52.5rem;
-        top: 19rem;
+        left: 49.7vw;
+        top: 31.6vh;
         border: 2px solid #193278;
     }
     #Profile{
-        left: 49.5rem;
-        top: 22.0625rem;
+        left: 46.86vw;
+        top: 36.77vh;
     }
     #Skills{
-        left: 75.75rem;
-        top: 22.0625rem;
+        left: 71.72vw;
+        top: 36.77vh;
     }
     #Hobbies{
-        left: 49.5rem;
-        top: 31.4375rem;
+        left: 46.86vw;
+        top: 52.4vh;
     }
     #Novels{
-        left: 75.75rem;
-        top: 31.4375rem;
+        left: 71.72vw;
+        top: 52.4vh;
+    }
+    .oya{
+        position: relative;
     }
 </style>
