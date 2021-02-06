@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import History from '@/components/History'
-import Hobby from '@/components/Hobby'
 import Skill from '@/components/Skill'
 import World from '@/components/World'
 import Writer from '@/components/Writer'
@@ -20,11 +19,6 @@ export default new Router({
       path: '/History.vue',
       name: 'History',
       component: History
-    },
-    {
-      path: '/Hobby.vue',
-      name: 'Hobby',
-      component: Hobby
     },
     {
       path: '/Skill.vue',
