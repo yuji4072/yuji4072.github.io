@@ -1,7 +1,7 @@
 {
   "name": "yuji4072.github.io",
   "version": "1.0.0",
-  "description": "portfolio",
+  "description": "Portfolio",
   "author": "yuji4072 <31642@toyota.kosen-ac.jp>",
   "private": true,
   "scripts": {
@@ -13,9 +13,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
-    "vue": "^2.6.12",
+    "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

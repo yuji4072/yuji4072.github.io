@@ -1,6 +1,6 @@
 # yuji4072.github.io
 
-> portfolio
+> Portfolio
 
 ## Build Setup
 
