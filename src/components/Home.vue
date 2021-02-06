@@ -36,7 +36,7 @@ export default {
   font-size: 18rem;
   line-height: 22.375rem;
   text-align: center;
-  font-family: Righteous;
+  font-family: 'Righteous', cursive;
 
   color: #00a0bc;
 }
