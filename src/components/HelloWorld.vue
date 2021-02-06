@@ -75,6 +75,7 @@ export default {
   border-style: solid;
   border-color: #f67690;
   -khtml-user-drag: element;
+  font-display: 32;
 }
 .hello{
   font-size:9rem;
