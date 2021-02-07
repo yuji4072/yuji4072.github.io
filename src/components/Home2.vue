@@ -24,8 +24,7 @@ export default {
         position: relative;
         width: 100vw;
         height: 100vh;
-        background: linear-gradient(180deg, rgba(240, 130, 30, 0.75) 28.65%,
-         rgba(249, 204, 163, 0.26619) 80.73%, #FFFFFF 95.31%);
+        background: #ffffff;
     }
     #myimg{
         position: absolute;
@@ -45,8 +44,8 @@ export default {
         
         font-style: normal;
         font-weight: normal;
-        font-size: 4rem;
-        line-height: 4.9rem;
+        font-size: 4vw;
+        line-height: 5vh;
         text-align: center;
         color: #fff000;
     }
@@ -60,8 +59,8 @@ export default {
         font-family:'Righteous',cursive;
         font-style: normal;
         font-weight: normal;
-        font-size: 3.375rem;
-        line-height: 4.1rem;
+        font-size: 3.4vw;
+        line-height: 9vh;
         text-align: center;
 
         color: #00a0bc;
@@ -75,8 +74,8 @@ export default {
         font-family:'Righteous',cursive;
         font-style: normal;
         font-weight: normal;
-        font-size: 3rem;
-        line-height: 3.7rem;
+        font-size: 3vw;
+        line-height: 8vh;
         text-align: center;
 
         color: #00a0bc;
@@ -86,7 +85,7 @@ export default {
         width: 38vw;
         height: 0;
         left: 49.7vw;
-        top: 31.6vh;
+        top: 30.6vh;
         border: 2px solid #193278;
     }
     #Profile{

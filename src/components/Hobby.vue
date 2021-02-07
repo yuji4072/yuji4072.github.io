@@ -1,8 +1,8 @@
 <template>
-  <div id="top">
-      <div class="oya">
+  <div id = "top">
+      <div class = "oya">
         <hr class="bar" id = "right">
-        <div id = "moji">Novels</div>
+        <div id = "moji">Hobby</div>
         <hr class="bar" id = "left">
       </div>
   </div>
@@ -46,7 +46,7 @@ export default {
         font-style: normal;
         font-weight: normal;
         font-size: 6vw;
-        line-height: 18.4vh;
+        line-height: 7.4vh;
         text-align: center;
         color: #F0821E;
 

@@ -32,6 +32,7 @@ export default {
   background: linear-gradient(0deg, #F0821E, #F0821E), 
   linear-gradient(180deg, #FFF000 0%, rgba(255, 255, 255, 0) 0.01%,
    rgba(255, 240, 0, 0.979167) 100%);
+   object-fit: cover;
 }
 #title{
   position: absolute;
@@ -42,8 +43,8 @@ export default {
 
   font-style: normal;
   font-weight: normal;
-  font-size: 13rem;
-  line-height: 22.375rem;
+  font-size: 9vw;
+  line-height: 45vh;
   text-align: center;
   font-family: 'Righteous', cursive;
 
@@ -54,16 +55,16 @@ export default {
   width: 33vw;
   height: 11.8vh;
   left: 30.4vw;
-  top: 62.9vh;
+  top: 55vh;
 
   background: #00a0bc;
   border-radius: 1rem;
 
-  font-size: 5rem;
+  font-size: 5vw;
   font-family: 'Righteous',cursive;
   font-style:normal;
   font-weight: normal;
-  line-height: 4.43rem;
+  line-height: 4.43vw;
   text-align: center;
 
   color: #FFF000;

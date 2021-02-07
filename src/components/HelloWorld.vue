@@ -2,19 +2,31 @@
   <div>
     <Home></Home>
     <Home2></Home2>
+    <Profile></Profile>
+    <Skill></Skill>
+    <Hobby></Hobby>
+    <Writer></Writer>
   </div>
 </template>
 
 <script>
 import Home from './Home.vue'
 import Home2 from './Home2.vue'
+import Profile from './Profile.vue'
+import Writer from './Writer.vue'
+import Skill from './Skill.vue'
+import Hobby from './Hobby.vue'
 
 export default {
   name: 'HelloWorld',
 
   components: {
      Home,
-     Home2, 
+     Home2,
+    Profile,
+    Skill,
+    Writer, 
+    Hobby,
   },
   data () {
     return {
