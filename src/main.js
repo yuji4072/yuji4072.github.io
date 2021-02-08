@@ -6,10 +6,14 @@ import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css' // add
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+//import './assets/sass/style.scss'
 //import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue)
+Vue.use(VueAxios,axios)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

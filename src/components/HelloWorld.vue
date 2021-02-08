@@ -1,11 +1,13 @@
 <template>
   <div>
+    <div class="container" style="margin: 0; padding: 0;">
     <Home></Home>
     <Home2></Home2>
     <Profile></Profile>
     <Skill></Skill>
     <Hobby></Hobby>
     <Writer></Writer>
+    </div>
   </div>
 </template>
 
