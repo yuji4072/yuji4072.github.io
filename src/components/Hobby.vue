@@ -40,13 +40,13 @@ export default {
         width: 22.9vw;
         height: 13.6vh;
         left: 38.2vw;
-        top: 9.8vh;
+        top: 10.8vh;
 
         font-family: 'Righteous',cursive;
         font-style: normal;
         font-weight: normal;
         font-size: 6vw;
-        line-height: 7.4vh;
+        line-height: 5vh;
         text-align: center;
         color: #F0821E;
 

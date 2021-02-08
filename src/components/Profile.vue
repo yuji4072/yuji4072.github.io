@@ -1,5 +1,5 @@
 <template>
-  <div id = "top">
+  <div  id = "pop">
       <div class = "oya">
         <hr class="bar" id = "right">
         <div id = "moji">Profile</div>
@@ -30,10 +30,10 @@ export default {
 </script>
 
 <style>
-    #top{
+    #pop{
         position: relative;
         width: 100vw;
-        height: 100vh;
+        height: 150vh;
         background: #ffffff;
     }
     .bar{
@@ -55,7 +55,7 @@ export default {
         width: 22.9vw;
         height: 13.6vh;
         left: 38.2vw;
-        top: 9.8vh;
+        top: 10.8vh;
 
         font-family: 'Righteous',cursive;
         font-style: normal;
@@ -72,10 +72,10 @@ export default {
     #table{
         position: absolute;
         width: 62.13vw;
+        height: 100vh;
         left: 18.6vw;
         top: 35.5vh;
-
-        
+      
         font-style: normal;
         font-weight: normal;
         font-size: 1.2vw;

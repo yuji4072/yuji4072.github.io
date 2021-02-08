@@ -4,9 +4,9 @@
     <hr class="bar" id = "right">
     <div id = "moji">Skills</div>
     <hr class="bar" id = "left">
-  <b-card-group deck id="group">
-    <b-card no-body>
-    <b-card-img src="/src/assets/logo.png" alt="Image" top></b-card-img>
+  <div class="container">
+    <b-card no-body class="card">
+    <b-card-img v-bind:src="image_cpp" alt="Image" top class= "img"></b-card-img>
       <b-card-body title="C++" sub-title="使用歴:半年未満">
       <b-card-text>
         競技プログラミングのコーディングに使用している。この言語を知ってからはもうCと遊んだ日々に戻れない。
@@ -14,48 +14,19 @@
       </b-card-body>
     </b-card>
 
-    <b-card no-body>
-    <b-card-img img-src="../assets/python.svg" alt="Image" top></b-card-img>
-      <b-card-body title="C++" sub-title="使用歴:半年未満">
-      <b-card-text>
-        競技プログラミングのコーディングに使用している。この言語を知ってからはもうCと遊んだ日々に戻れない。
-      </b-card-text>
-      </b-card-body>
-    </b-card>
-
-    <b-card no-body>
-    <b-card-img src="../assets/logo.png" alt="Image" top></b-card-img>
-      <b-card-body title="C++" sub-title="使用歴:半年未満">
-      <b-card-text>
-        競技プログラミングのコーディングに使用している。この言語を知ってからはもうCと遊んだ日々に戻れない。
-      </b-card-text>
-      </b-card-body>
-    </b-card>
-
-    <b-card no-body>
-    <b-card-img src="../assets/logo.png" alt="Image" top></b-card-img>
-      <b-card-body title="C++" sub-title="使用歴:半年未満">
-      <b-card-text>
-        競技プログラミングのコーディングに使用している。この言語を知ってからはもうCと遊んだ日々に戻れない。
-      </b-card-text>
-      </b-card-body>
-    </b-card>
-
-    <b-card no-body>
-    <b-card-img src="../assets/logo.png" alt="Image" top></b-card-img>
-      <b-card-body title="C++" sub-title="使用歴:半年未満">
-      <b-card-text>
-        競技プログラミングのコーディングに使用している。この言語を知ってからはもうCと遊んだ日々に戻れない。
-      </b-card-text>
-      </b-card-body>
-    </b-card>
-  </b-card-group>
+   
+  </div>
   </div>
   </div>
 </template>
 
 <script>
 export default {
+  data(){
+    return{
+      image_cpp:require("../assets/logo.png"),
+    }
+  }
 
 }
 </script>
@@ -86,7 +57,7 @@ export default {
         width: 22.9vw;
         height: 13.6vh;
         left: 38.2vw;
-        top: 9.8vh;
+        top: 10.8vh;
 
         font-family: 'Righteous',cursive;
         font-style: normal;
@@ -102,9 +73,30 @@ export default {
     }
 
     #group{
-        position: absolute;
-        width: 62.13vw;
-        left: 18.6vw;
-        top: 35.5vh;
+      position: absolute;
+      width: 62.13vw;
+      left: 18.6vw;
+      top: 35.5vh;
     }
+    .card{
+      width: 20rem;
+      margin: 0.5vw;;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    position: absolute;
+    width: 82.13vw;
+    left: 10.6vw;
+    top: 35.5vh;
+    text-align: center;
+    }
+    .img{
+      width: 5rem;
+      height: 7rem;
+      margin: 0 auto;
+    }
+
 </style>

@@ -40,7 +40,7 @@ export default {
         width: 22.9vw;
         height: 13.6vh;
         left: 38.2vw;
-        top: 9.8vh;
+        top: 10.8vh;
 
         font-family: 'Righteous',cursive;
         font-style: normal;
