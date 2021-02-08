@@ -6,7 +6,7 @@
       <hr class="bar" id="left" />
       <div class="titleskill">Langage</div>
       <div class="containe">
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_cpp"
             alt="Image"
@@ -24,7 +24,7 @@
           </b-card-body>
         </b-card>
 
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_python"
             alt="Image"
@@ -42,7 +42,7 @@
           </b-card-body>
         </b-card>
 
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_c"
             alt="Image"
@@ -55,8 +55,7 @@
             </b-card-text>
           </b-card-body>
         </b-card>
-
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_csharp"
             alt="Image"
@@ -70,7 +69,7 @@
           </b-card-body>
         </b-card>
 
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_html"
             alt="Image"
@@ -88,7 +87,7 @@
           </b-card-body>
         </b-card>
 
-        <b-card no-body class="card">
+        <b-card no-body class="car">
           <b-card-img
             v-bind:src="image_css"
             alt="Image"
@@ -101,13 +100,13 @@
             class="title_lng"
           >
             <b-card-text class="text_lng">
-              <span id="css">完全に理解した。</span>
+              <span id="css">完全に理解した</span>
             </b-card-text>
           </b-card-body>
         </b-card>
       </div>
       <div class="titleskill">Atcoder</div>
-      <div id = "atcoder">{{data}}</div>
+      <div id="atcoder">{{ data }}</div>
     </div>
   </div>
 </template>
@@ -123,12 +122,12 @@ export default {
       image_c: require("../assets/c.svg"),
       image_css: require("../assets/css-3.svg"),
       data: null,
-    }
+    };
   },
-  methods(){
+  methods() {
     axios
-      .get('https://atcoder.jp/users/Hanai_Tama/history/json')
-      .then(response => (this.info = response))
+      .get("https://atcoder.jp/users/Hanai_Tama/history/json")
+      .then((response) => (this.info = response));
   },
 };
 </script>
@@ -144,7 +143,7 @@ export default {
   /* position: absolute; */
   border: 1vh solid #00a0bc;
   width: 44.3vw;
-  height: 0; 
+  height: 0;
 }
 #left {
   left: 16.8vw;
@@ -172,23 +171,23 @@ export default {
 .oya {
   position: relative;
 }
-.card {
+.car {
   width: 20rem;
   margin: 0.5vw;
   border-width: 0.5rem;
   border-color: #00a0bc;
 }
-.containe{
+.containe {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center; /* margin: 0 10vw; */
 
   /* position: relative; 
   width: 82.13vw;
   top: 40.5vh;
   left: 10.6vw;
   text-align: center; */
-} 
+}
 .img {
   width: 6rem;
   height: 6rem;
@@ -196,9 +195,10 @@ export default {
   margin-top: 0.5rem;
 }
 #css {
-  margin-left: 11vw;
+  margin-left: 10vw;
   white-space: nowrap;
-  font-size: 2vw;
+  font-size: 3rem;
+  overflow: hidden;
 }
 .text_lng {
   color: #f0821e;
@@ -214,7 +214,6 @@ export default {
   font-family: "Righteous", cursive;
   color: #f0821e;
   font-size: 4vw;
-  margin: 40vh 0 auto auto; 
+  margin: 40vh auto 0 auto;
 }
-
 </style>
