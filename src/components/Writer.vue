@@ -1,5 +1,5 @@
 <template>
-  <div id="top">
+  <div id="novel">
       <div class="oya">
         <hr class="bar" id = "right">
         <div id = "moji">Novels</div>
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-    #top{
+    #novel{
         position: relative;
         width: 100vw;
         height: 100vh;

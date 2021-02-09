@@ -1,5 +1,5 @@
 <template>
-  <div id="sop">
+  <div id="skill">
     <div class="oya">
       <hr class="bar" id="right" />
       <div id="moji">Skills</div>
@@ -133,7 +133,7 @@ export default {
 </script>
 
 <style>
-#sop {
+#skill {
   position: relative;
   width: 100vw;
   background: #ffffff;

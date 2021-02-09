@@ -1,5 +1,5 @@
 <template>
-  <div id="hop">
+  <div id="hob">
     <div class="oya">
       <hr class="bar" id="right" />
       <div id="moji">Hobby</div>
@@ -44,7 +44,7 @@ export default {};
 </script>
 
 <style>
-#hop {
+#hob {
   position: relative;
 
   width: 100vw;

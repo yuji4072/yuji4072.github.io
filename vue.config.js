@@ -1,7 +1,7 @@
 module.exports = {
-    publicPath: "./",
+    publicPath: '/yuji4072.github.io/',
     assetsDir: "",
-    outputDir: "docs",
+    outputDir: 'docs',
     devServer: {
       host: "localhost"
     }

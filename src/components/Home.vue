@@ -3,9 +3,11 @@
     <div class = "oya">
       <img src="../assets/Medium_toppage_test3.png" id = "back">
       <div id = "title">WHO AM I ?</div>
+      <router-link to="#home2">
       <b-button id = "im">
           I'M ...
       </b-button>
+      </router-link>
       <div id = "try"></div>
     </div>
   </div>
@@ -13,7 +15,19 @@
 
 <script>
 export default {
-
+  watch: {
+    '$route': function (n, o) {
+      if (n.hash.match(/^#/)) {
+        document.getElementById(n.hash.replace(/^#/, '')).scrollIntoView()
+      }
+      console.log('new, old', [n.hash, o.hash])
+    }
+  },
+  mounted () {
+    if (this.$route.hash.match(/^#/)) {
+      document.getElementById(this.$route.hash.replace(/^#/, '')).scrollIntoView()
+    }
+  }
 }
 </script>
 

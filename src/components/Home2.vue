@@ -1,26 +1,46 @@
 <template>
-  <div id = "top">
+  <div id = "home2">
       <div class = "oya">
       <img src="../assets/myimg.png" id = "myimg">
       <div id = "yuji">Yuji Morishima</div>
       <div id = "age">Age: 20</div>
       <hr id = "bar">
+      <router-link to="#prof">
       <b-button class="buttons" id ="Profile">Profile</b-button>
+      </router-link>
+      <router-link to="#skill">
       <b-button class="buttons" id ="Skills">Skills</b-button>
+      </router-link>
+      <router-link to="#hob">
       <b-button class="buttons" id ="Hobbies">Hobbies</b-button>
+      </router-link>
+      <router-link to="#novel">
       <b-button class="buttons" id ="Novels">Novels</b-button>
+      </router-link>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-
+  watch: {
+    '$route': function (n, o) {
+      if (n.hash.match(/^#/)) {
+        document.getElementById(n.hash.replace(/^#/, '')).scrollIntoView()
+      }
+      console.log('new, old', [n.hash, o.hash])
+    }
+  },
+  mounted () {
+    if (this.$route.hash.match(/^#/)) {
+      document.getElementById(this.$route.hash.replace(/^#/, '')).scrollIntoView()
+    }
+  }
 }
 </script>
 
 <style>
-    #top{
+    #home2{
         position: relative;
         width: 100vw;
         height: 100vh;

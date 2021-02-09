@@ -6,6 +6,8 @@ import Skill from '@/components/Skill'
 import World from '@/components/World'
 import Writer from '@/components/Writer'
 import Hobby from '@/components/Hobby'
+import Home from '@/components/Home'
+import Home2 from '@/components/Home2'
 
 Vue.use(Router)
 
@@ -15,6 +17,16 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/Home.vue',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/Home2.vue',
+      name: 'Home2',
+      component: Home2
     },
     {
       path: '/Profile.vue',

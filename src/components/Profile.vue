@@ -1,5 +1,5 @@
 <template>
-  <div id="pop">
+  <div id="prof">
     <div class="oya">
       <hr class="bar" id="right" />
       <div id="moji">Profile</div>
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-#pop {
+#prof {
   position: relative;
   width: 100vw;
   height: 150vh;
@@ -76,7 +76,7 @@ export default {
 
   font-style: normal;
   font-weight: normal;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   line-height: 3.5vh;
   text-align: center;
   color: #f0821e;
