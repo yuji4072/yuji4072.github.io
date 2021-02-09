@@ -1,9 +1,9 @@
 <template>
   <div id="prof">
     <div class="oya">
-      <hr class="bar" id="right" />
-      <div id="moji">Profile</div>
-      <hr class="bar" id="left" />
+      <hr class="bar" id = "right" />
+      <div class="moji">Profile</div>
+      <hr class="bar" id = "left" />
       <b-table striped :items="items" id="table"></b-table>
     </div>
   </div>
@@ -50,19 +50,17 @@ export default {
   left: 38.2vw;
   top: 23.44vh;
 }
-#moji {
-  position: absolute;
+.moji {
   width: 22.9vw;
   height: 13.6vh;
-  left: 38.2vw;
-  top: 10.8vh;
+
   font-family: "Righteous", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 6vw;
-  line-height: 7.4vh;
   text-align: center;
   color: #f0821e;
+  margin: 0 auto;
 }
 .oya {
   position: relative;
