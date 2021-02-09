@@ -1,6 +1,8 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-  ? '/"yuji4072.github.io"/'
-  : '/',
-  outputDir: 'docs',
+    publicPath: '/yuji4072.github.io/',
+    assetsDir: "",
+    outputDir: 'docs',
+    devServer: {
+      host: "localhost"
+    }
   }
