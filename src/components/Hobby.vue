@@ -15,14 +15,14 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <b-card border-variant="light" header="青夏" class="text-center">
+        <b-card title = "青夏" class="text-center">
           <b-card-text
             >夏の青さ故に青夏</b-card-text
           >
         </b-card>
       </b-card-group>
       <b-card-group deck class="mb">
-        <b-card border-variant="light" header="After the Rain" class="text-center">
+        <b-card title="After the Rain" class="text-center">
           <b-card-text
             >雨上がりの一瞬</b-card-text
           >

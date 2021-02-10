@@ -112,6 +112,9 @@
 </template>
 
 <script>
+import axios from "axios";
+
+const fetch = require("node-fetch");
 export default {
   data() {
     return {
@@ -121,13 +124,29 @@ export default {
       image_html: require("../assets/html-5.svg"),
       image_c: require("../assets/c.svg"),
       image_css: require("../assets/css-3.svg"),
-      data: null,
+      data: [],
     };
   },
-  methods() {
-    axios
-      .get("https://atcoder.jp/users/Hanai_Tama/history/json")
-      .then((response) => (this.info = response));
+  created: function () {
+    var url = "https://atcoder.jp/users/Hanai_Tama/history/json"; //遅延情報のJSON
+    fetch(url)
+      .then( (res) => {
+        console.log("check");
+        return res.json(); // 読み込むデータをJSONに設定
+      })
+      .then ( (json) => {
+        for (var i = 0; i < json.length; i++) {
+          var NewRating = json[i].NewRating;
+          this.data.push(NewRating);
+        };
+      })
+      .catch(err => {
+        console.log("err");
+        return err;
+      });
+  },
+  methods: {
+
   },
 };
 </script>
