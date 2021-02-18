@@ -55,7 +55,7 @@ export default {
   width: 22.9vw;
   height: 10.6vh;
   left: 38.2vw;
-  top: 20.8vh;
+  top: 25.8vh;
   font-family: "Righteous", cursive;
   font-style: normal;
   font-weight: normal;
