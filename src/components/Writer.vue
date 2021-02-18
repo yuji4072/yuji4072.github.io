@@ -18,12 +18,14 @@
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
+        <router-link to = 'Novel_seisai'>
         <b-carousel-slide
           caption="制裁:もう僕は君と付き合えない"
           img-src="https://picsum.photos/1024/480/?image=52"
         >
           <p></p>
         </b-carousel-slide>
+        </router-link>
 
         <b-carousel-slide
           caption="月が消えた夏に"
@@ -63,7 +65,10 @@
 </template>
 
 <script>
+import Novel_seisai from './Novel_seisai.vue'
+
 export default {
+
   data() {
     return {
       slide: 0,
@@ -92,7 +97,7 @@ export default {
   width: 44.3vw;
   height: 0;
 }
-#left {
+/* #left {
   left: 16.8vw;
   top: 9.8vh;
 }
@@ -114,7 +119,7 @@ export default {
   line-height: 18.4vh;
   text-align: center;
   color: #f0821e;
-}
+} */
 .oya {
   position: relative;
 }

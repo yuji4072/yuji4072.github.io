@@ -53,14 +53,14 @@ export default {
 #moji {
   position: absolute;
   width: 22.9vw;
-  height: 13.6vh;
+  height: 10.6vh;
   left: 38.2vw;
-  top: 10.8vh;
+  top: 20.8vh;
   font-family: "Righteous", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 6vw;
-  line-height: 7.4vh;
+  line-height: 5.4vh;
   text-align: center;
   color: #f0821e;
 }

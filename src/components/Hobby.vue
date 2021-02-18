@@ -53,8 +53,8 @@ export default {};
   display: flex;
   text-align: center;
 }
-.bar {
-  /* position: absolute; */
+/* .bar {
+  position: absolute;
   border: 1vh solid #00a0bc;
   width: 44.3vw;
   height: 0;
@@ -68,12 +68,12 @@ export default {};
   top: 23.44vh;
 }
 #moji {
-  /* position: absolute; */
+  position: absolute;
   width: 22.9vw;
-  height: 13.6vh;
+  height: 13.6vh; */
   /* left: 38.2vw;
   top: 10.8vh; */
-
+/* 
   font-family: "Righteous", cursive;
   font-style: normal;
   font-weight: normal;
@@ -81,7 +81,7 @@ export default {};
   line-height: 7.4vh;
   text-align: center;
   color: #f0821e;
-}
+} */
 .oya {
   position: relative;
 }

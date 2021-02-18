@@ -158,35 +158,35 @@ export default {
   background: #ffffff;
   display: flex;
 }
-.bar {
-  /* position: absolute; */
+/* .bar {
+  position: absolute;
   border: 1vh solid #00a0bc;
   width: 44.3vw;
   height: 0;
-}
-#left {
+} */
+/* #left {
   left: 16.8vw;
   top: 9.8vh;
 }
 #right {
   left: 38.2vw;
   top: 23.44vh;
-}
-#moji {
-  /* position: absolute; */
+} */
+/* #moji {
+  position: absolute;
   width: 22.9vw;
   height: 13.6vh;
   /* left: 38.2vw;
   top: 10.8vh; */
-
+/* 
   font-family: "Righteous", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 6vw;
   line-height: 7.4vh;
   text-align: center;
-  color: #f0821e;
-}
+  color: #f0821e; 
+} */
 .oya {
   position: relative;
 }
