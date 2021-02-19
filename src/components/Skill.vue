@@ -106,16 +106,26 @@
         </b-card>
       </div>
       <div class="titleskill">Atcoder</div>
-      <div id="atcoder">{{ data }}</div>
+      <div id="atcoder">
+        <chart></chart>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
-
+import Chart from './Chart';
 const fetch = require("node-fetch");
+
 export default {
+  components:{
+    Chart,
+  },
+  // extends: Bar,
+  mounted() {
+    // this.renderChart(this.datacollection, this.options);
+  },
   data() {
     return {
       image_cpp: require("../assets/c-plusplus.svg"),
@@ -130,24 +140,22 @@ export default {
   created: function () {
     var url = "https://atcoder.jp/users/Hanai_Tama/history/json"; //遅延情報のJSON
     fetch(url)
-      .then( (res) => {
+      .then((res) => {
         console.log("check");
         return res.json(); // 読み込むデータをJSONに設定
       })
-      .then ( (json) => {
+      .then((json) => {
         for (var i = 0; i < json.length; i++) {
           var NewRating = json[i].NewRating;
           this.data.push(NewRating);
-        };
+        }
       })
-      .catch(err => {
+      .catch((err) => {
         console.log("err");
         return err;
       });
   },
-  methods: {
-
-  },
+  methods: {},
 };
 </script>
 
@@ -200,6 +208,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* margin: 0 10vw; */
+  width: 100vw;
 
   /* position: relative; 
   width: 82.13vw;
