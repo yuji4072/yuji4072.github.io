@@ -106,8 +106,8 @@
         </b-card>
       </div>
       <div class="titleskill">Atcoder</div>
-      <div id="atcoder">
-        <chart></chart>
+      <div id = "ttt">
+        <chart id="atcoder"></chart>
       </div>
     </div>
   </div>
@@ -243,5 +243,11 @@ export default {
   color: #f0821e;
   font-size: 4vw;
   margin: 40vh auto 0 auto;
+}
+#atcoder{
+  width: auto;
+}
+#ttt{
+  text-align: center;
 }
 </style>

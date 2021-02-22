@@ -1,40 +1,46 @@
 <script>
-import { Bar } from 'vue-chartjs';
+import { Line } from 'vue-chartjs';
 
 export default {
-  extends: Bar,
+  extends: Line,
   name: 'chart',
   data () {
     return {
       data: {
-        labels: ['', '', '', '', '', ''],
-        datasets: [
-          {
-            label: 'Line Dataset',
-            data: [10, 50, 20, 30, 30, 40],
-            borderColor: '#CFD8DC',
+        datasets: [{
+            lineTension: 0,
+            label: 'Atcoder Late',
+            backgroundColor: '#f0821e',
+            borderColor: '#f0821e',
             fill: false,
-            type: 'line',
-            lineTension: 0.3,
-          }
-        ]
+            data: [{
+                x: '2021-01-02T22:40:00',
+                y: 10
+            }, {
+                x: '2021-01-23T22:40:00',
+                y: 131
+            }, {
+                x: '2021-01-30T22:40:00',
+                y: 183
+            }, {
+                x: '2021-02-06T22:40:00',
+                y: 341
+            }, {
+                x: '2021-02-20T22:40:00',
+                y: 383
+            }]
+        }]
       },
       options: {
         scales: {
-          xAxes: [{
-            scaleLabel: {
-              display: true,
-              labelString: 'Month'
-            }
-          }],
-          yAxes: [{
-            ticks: {
-              beginAtZero: true,
-              stepSize: 10,
-            }
-          }]
+            xAxes: [{
+                type: 'time',
+                time: {
+                    unit: 'day'
+                }
+            }]
         }
-      }
+    }
     }
   },
   mounted () {

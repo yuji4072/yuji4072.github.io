@@ -60,12 +60,12 @@
           Sliding: {{ sliding }}
         </p>
       </b-carousel>
-    </div>
-    <div id ="tama">
+      <div id ="tama">
       PN: Hanai Tama
       <b-link src = "https://kakuyomu.jp/users/hanaitama">
       https://kakuyomu.jp/users/hanaitama
       </b-link>
+    </div>
     </div>
   </div>
 </template>
@@ -133,5 +133,8 @@ export default {
     position:absolute;
     margin: 40vh 6vw 20vh 16vw;
     text-align: center;
+}
+#tama{
+    position:absolute;
 }
 </style>
