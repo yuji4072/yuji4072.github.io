@@ -245,7 +245,7 @@ export default {
   margin: 40vh auto 0 auto;
 }
 #atcoder{
-  width: auto;
+  width: 100vw;
 }
 #ttt{
   text-align: center;
