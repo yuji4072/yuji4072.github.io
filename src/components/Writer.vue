@@ -18,7 +18,7 @@
         @sliding-start="onSlideStart"
         @sliding-end="onSlideEnd"
       >
-        <b-link src="https://kakuyomu.jp/works/1177354054895090387">
+        <b-link href="https://kakuyomu.jp/works/1177354054895090387">
           <b-carousel-slide
             caption="制裁:もう僕は君と付き合えない"
             img-src="https://picsum.photos/1024/480/?image=52"
@@ -27,7 +27,7 @@
           </b-carousel-slide>
         </b-link>
 
-        <b-link src="https://kakuyomu.jp/works/1177354054895591844">
+        <b-link href="https://kakuyomu.jp/works/1177354054895591844">
           <b-carousel-slide
             caption="月が消えた夏に"
             img-src="https://picsum.photos/1024/480/?image=54"
@@ -36,7 +36,7 @@
           </b-carousel-slide>
         </b-link>
 
-        <b-link src="https://kakuyomu.jp/works/1177354054897198897">
+        <b-link href="https://kakuyomu.jp/works/1177354054897198897">
           <b-carousel-slide
             caption="神様に触れた一週間"
             img-src="https://picsum.photos/1024/480/?image=58"
@@ -45,7 +45,7 @@
           </b-carousel-slide>
         </b-link>
 
-        <b-link src="https://kakuyomu.jp/works/1177354054895991714">
+        <b-link href="https://kakuyomu.jp/works/1177354054895991714">
           <b-carousel-slide
             caption="それでもあたしはギターをひっかくよっ！"
             img-src="https://picsum.photos/1024/480/?image=58"
@@ -69,7 +69,7 @@
     </div>
     <div id="tama">
       PN: Hanai Tama
-      <b-link src="https://kakuyomu.jp/users/hanaitama">
+      <b-link href="https://kakuyomu.jp/users/hanaitama">
         https://kakuyomu.jp/users/hanaitama
       </b-link>
     </div>
