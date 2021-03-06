@@ -1,6 +1,7 @@
 # yuji4072.github.io
 
 > Portfolio
+> まだ作成途中
 
 ## Build Setup
 
